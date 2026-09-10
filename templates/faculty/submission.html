@@ -1,0 +1,312 @@
+{% extends "base.html" %}
+
+{% block title %}Submissions | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Faculty Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="assignment.html">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">📥</span>
+                Submissions
+            </a>
+
+            <a href="upload.html">
+                <span class="nav-icon">📤</span>
+                Upload Resource
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                My Resources
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Student Submissions</h1>
+                <p>Review and manage assignment submissions</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+                    <div class="profile-avatar">FK</div>
+
+                    <div class="profile-info">
+                        <strong>Faculty Member</strong>
+                        <span>AI & Data Science</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Summary -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">📥</div>
+
+                <div>
+                    <h3>74</h3>
+                    <p>Submitted</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+
+                <div>
+                    <h3>16</h3>
+                    <p>Pending</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⚠️</div>
+
+                <div>
+                    <h3>05</h3>
+                    <p>Late</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+
+                <div>
+                    <h3>58</h3>
+                    <p>Evaluated</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Filter -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Submission Records</h3>
+            </div>
+
+            <div class="submission-filter">
+
+                <select>
+                    <option>All Assignments</option>
+                    <option>SQL Nested Queries</option>
+                    <option>Python Functions</option>
+                </select>
+
+                <select>
+                    <option>All Status</option>
+                    <option>Submitted</option>
+                    <option>Pending</option>
+                    <option>Late</option>
+                </select>
+
+                <input
+                    type="search"
+                    placeholder="Search student..."
+                >
+
+            </div>
+
+
+            <div class="submission-table">
+
+                <div class="submission-row table-head">
+
+                    <span>Student</span>
+                    <span>Assignment</span>
+                    <span>Date</span>
+                    <span>Status</span>
+                    <span>Action</span>
+
+                </div>
+
+
+                <div class="submission-row">
+
+                    <span>
+                        Rahul Patil
+                    </span>
+
+                    <span>
+                        SQL Nested Queries
+                    </span>
+
+                    <span>
+                        10 Sep
+                    </span>
+
+                    <b class="status-submitted">
+                        Submitted
+                    </b>
+
+                    <button>View</button>
+
+                </div>
+
+
+                <div class="submission-row">
+
+                    <span>
+                        Priya Shah
+                    </span>
+
+                    <span>
+                        SQL Nested Queries
+                    </span>
+
+                    <span>
+                        09 Sep
+                    </span>
+
+                    <b class="status-submitted">
+                        Submitted
+                    </b>
+
+                    <button>View</button>
+
+                </div>
+
+
+                <div class="submission-row">
+
+                    <span>
+                        Amit More
+                    </span>
+
+                    <span>
+                        Python Functions
+                    </span>
+
+                    <span>
+                        08 Sep
+                    </span>
+
+                    <b class="status-late">
+                        Late
+                    </b>
+
+                    <button>View</button>
+
+                </div>
+
+
+                <div class="submission-row">
+
+                    <span>
+                        Sneha Joshi
+                    </span>
+
+                    <span>
+                        SQL Nested Queries
+                    </span>
+
+                    <span>—</span>
+
+                    <b class="status-pending">
+                        Pending
+                    </b>
+
+                    <button>Remind</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Review -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Selected Submission</h3>
+            </div>
+
+            <div class="review-box">
+
+                <div>
+                    <strong>Rahul Patil</strong>
+                    <span>SQL Nested Queries • Submitted 10 Sep</span>
+                </div>
+
+                <div class="review-actions">
+                    <button>View File</button>
+                    <button>Download</button>
+                </div>
+
+            </div>
+
+
+            <div class="marks-box">
+
+                <label>Marks</label>
+
+                <input
+                    type="number"
+                    placeholder="Enter marks"
+                >
+
+                <button class="primary-btn marks-btn">
+                    Save Evaluation
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}

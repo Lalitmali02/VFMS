@@ -1,0 +1,175 @@
+.form-box {
+    width: 100%;
+    max-width: 570px;
+    background: white;
+    padding: 38px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 15px 40px #0f172a14;
+}
+
+.register-box {
+    max-width: 700px;
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.form-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    background: #eff6ff;
+    border-radius: 12px;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.form-heading h2 {
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.form-heading p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #2563eb1a;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 16px;
+    font-size: 13px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #64748b;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #e2e8f0;
+}
+
+.account-text {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.account-text a {
+    font-weight: 600;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #64748b;
+    font-size: 12px;
+    margin: 5px 0 12px;
+}
+
+.security-note {
+    margin-top: 20px;
+    padding: 11px;
+    background: #f8fafc;
+    border-radius: 8px;
+    text-align: center;
+    color: #64748b;
+    font-size: 11px;
+}
+
+
+@media (max-width: 650px) {
+
+    .form-box {
+        padding: 25px 20px;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .login-options {
+        font-size: 12px;
+    }
+}

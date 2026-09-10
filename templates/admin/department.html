@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+
+{% block title %}Departments | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Administrator Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="users.html">
+                <span class="nav-icon">👥</span>
+                Users
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">🏢</span>
+                Departments
+            </a>
+
+            <a href="subjects.html">
+                <span class="nav-icon">📚</span>
+                Subjects
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Departments</h1>
+                <p>Manage academic departments and their structure</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">AD</div>
+
+                    <div class="profile-info">
+                        <strong>Administrator</strong>
+                        <span>System Admin</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h3>Department Directory</h3>
+                    <p class="admin-card-subtitle">
+                        Departments available in VFMS
+                    </p>
+                </div>
+
+                <button class="admin-add-btn">
+                    + Add Department
+                </button>
+
+            </div>
+
+
+            <div class="department-grid">
+
+
+                <div class="department-card">
+
+                    <div class="department-icon">
+                        AI
+                    </div>
+
+                    <div>
+                        <h4>AI & Data Science</h4>
+
+                        <p>
+                            Artificial Intelligence and Data Science
+                        </p>
+
+                        <span>Students: 42 • Faculty: 08</span>
+                    </div>
+
+                    <button>Edit</button>
+
+                </div>
+
+
+                <div class="department-card">
+
+                    <div class="department-icon">
+                        CE
+                    </div>
+
+                    <div>
+                        <h4>Computer Engineering</h4>
+
+                        <p>
+                            Computer and Software Engineering
+                        </p>
+
+                        <span>Students: 38 • Faculty: 07</span>
+                    </div>
+
+                    <button>Edit</button>
+
+                </div>
+
+
+                <div class="department-card">
+
+                    <div class="department-icon">
+                        EC
+                    </div>
+
+                    <div>
+                        <h4>Electronics</h4>
+
+                        <p>
+                            Electronics and Communication
+                        </p>
+
+                        <span>Students: 31 • Faculty: 06</span>
+                    </div>
+
+                    <button>Edit</button>
+
+                </div>
+
+
+                <div class="department-card">
+
+                    <div class="department-icon">
+                        ME
+                    </div>
+
+                    <div>
+                        <h4>Mechanical Engineering</h4>
+
+                        <p>
+                            Mechanical Engineering Department
+                        </p>
+
+                        <span>Students: 25 • Faculty: 05</span>
+                    </div>
+
+                    <button>Edit</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Add New Department</h3>
+            </div>
+
+
+            <div class="admin-form-grid">
+
+                <div class="admin-field">
+
+                    <label>Department Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: AI & Data Science"
+                    >
+
+                </div>
+
+
+                <div class="admin-field">
+
+                    <label>Department Code</label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: AIDS"
+                    >
+
+                </div>
+
+
+                <div class="admin-field full-field">
+
+                    <label>Description</label>
+
+                    <textarea
+                        rows="3"
+                        placeholder="Enter department description..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-form-actions">
+
+                <button class="secondary-btn">
+                    Cancel
+                </button>
+
+                <button class="primary-btn admin-btn">
+                    Add Department
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}

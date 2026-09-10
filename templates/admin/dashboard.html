@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Admin Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="active">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">👥</span>
+                Users
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">🏢</span>
+                Departments
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📚</span>
+                Subjects
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main -->
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Admin Dashboard</h1>
+                <p>Manage the VFMS academic environment</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">AD</div>
+
+                    <div class="profile-info">
+                        <strong>Administrator</strong>
+                        <span>System Admin</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Welcome -->
+        <section class="welcome-card">
+
+            <h2>Welcome, Administrator 👋</h2>
+
+            <p>
+                Monitor users, academic resources and system activity
+                from one centralized dashboard.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div>
+                    <h3>120</h3>
+                    <p>Total Users</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🏢</div>
+                <div>
+                    <h3>05</h3>
+                    <p>Departments</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div>
+                    <h3>32</h3>
+                    <p>Subjects</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📁</div>
+                <div>
+                    <h3>485</h3>
+                    <p>Resources</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Quick Management -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Quick Management</h3>
+                <a href="#" class="view-link">View All</a>
+            </div>
+
+            <div class="quick-actions">
+
+                <div class="action-card">
+                    <div class="action-icon">👥</div>
+                    <h4>Manage Users</h4>
+                    <p>Add, edit or control user accounts.</p>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-icon">🏢</div>
+                    <h4>Departments</h4>
+                    <p>Manage academic departments.</p>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-icon">📚</div>
+                    <h4>Subjects</h4>
+                    <p>Configure subjects and units.</p>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-icon">📁</div>
+                    <h4>Resources</h4>
+                    <p>Monitor uploaded academic files.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+        <div class="admin-two-column">
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>User Overview</h3>
+                </div>
+
+                <div class="overview-row">
+                    <span>Students</span>
+                    <strong>96</strong>
+                </div>
+
+                <div class="overview-row">
+                    <span>Faculty</span>
+                    <strong>22</strong>
+                </div>
+
+                <div class="overview-row">
+                    <span>Administrators</span>
+                    <strong>02</strong>
+                </div>
+
+            </section>
+
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Resource Overview</h3>
+                </div>
+
+                <div class="resource-grid">
+
+                    <div>
+                        <strong>180</strong>
+                        <span>Notes</span>
+                    </div>
+
+                    <div>
+                        <strong>85</strong>
+                        <span>PPTs</span>
+                    </div>
+
+                    <div>
+                        <strong>70</strong>
+                        <span>Practicals</span>
+                    </div>
+
+                    <div>
+                        <strong>55</strong>
+                        <span>Question Papers</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Recent Activity -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Recent Activity</h3>
+                <a href="#" class="view-link">View History</a>
+            </div>
+
+            <ul class="activity-list">
+
+                <li class="activity-item">
+                    <div class="activity-icon">📤</div>
+                    <div class="activity-text">
+                        <strong>New resource uploaded</strong>
+                        <span>DBMS Notes • 10 minutes ago</span>
+                    </div>
+                </li>
+
+                <li class="activity-item">
+                    <div class="activity-icon">👤</div>
+                    <div class="activity-text">
+                        <strong>New student registered</strong>
+                        <span>AI & Data Science • 30 minutes ago</span>
+                    </div>
+                </li>
+
+                <li class="activity-item">
+                    <div class="activity-icon">📝</div>
+                    <div class="activity-text">
+                        <strong>Assignment created</strong>
+                        <span>Python Programming • 1 hour ago</span>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- System Status -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>System Status</h3>
+            </div>
+
+            <div class="status-row">
+
+                <span>
+                    <b class="status-dot"></b>
+                    Database
+                </span>
+
+                <strong>Operational</strong>
+
+            </div>
+
+            <div class="status-row">
+
+                <span>
+                    <b class="status-dot"></b>
+                    File Storage
+                </span>
+
+                <strong>68% Used</strong>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}

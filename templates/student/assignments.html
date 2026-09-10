@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block title %}Assignments | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Student Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="resources.html">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="favorites.html">
+                <span class="nav-icon">⭐</span>
+                Favorites
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📤</span>
+                My Submissions
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Assignments</h1>
+                <p>View, track and submit your assignments</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+                    <div class="profile-avatar">LM</div>
+
+                    <div class="profile-info">
+                        <strong>Lalit Mali</strong>
+                        <span>AI & Data Science • Sem 3</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">📝</div>
+
+                <div>
+                    <h3>08</h3>
+                    <p>Active</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+
+                <div>
+                    <h3>12</h3>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+
+                <div>
+                    <h3>04</h3>
+                    <p>Pending</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⚠️</div>
+
+                <div>
+                    <h3>01</h3>
+                    <p>Late</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>My Assignments</h3>
+            </div>
+
+            <div class="student-assignment-list">
+
+                <div class="student-assignment">
+
+                    <div class="assignment-main">
+                        <span class="assignment-type">DBMS</span>
+
+                        <h4>SQL Nested Queries</h4>
+
+                        <p>
+                            Unit 02 • 20 Marks • Due 12 Sep 2026
+                        </p>
+                    </div>
+
+                    <b class="status-pending">
+                        Pending
+                    </b>
+
+                    <a href="submit.html">
+                        Open
+                    </a>
+
+                </div>
+
+
+                <div class="student-assignment">
+
+                    <div class="assignment-main">
+                        <span class="assignment-type">Python</span>
+
+                        <h4>Python Functions</h4>
+
+                        <p>
+                            Unit 03 • 20 Marks • Due 15 Sep 2026
+                        </p>
+                    </div>
+
+                    <b class="status-pending">
+                        Pending
+                    </b>
+
+                    <a href="submit.html">
+                        Open
+                    </a>
+
+                </div>
+
+
+                <div class="student-assignment">
+
+                    <div class="assignment-main">
+                        <span class="assignment-type">Data Structures</span>
+
+                        <h4>Tree Implementation</h4>
+
+                        <p>
+                            Unit 04 • 25 Marks • Due 18 Sep 2026
+                        </p>
+                    </div>
+
+                    <b class="status-submitted">
+                        Submitted
+                    </b>
+
+                    <a href="submit.html">
+                        View
+                    </a>
+
+                </div>
+
+
+                <div class="student-assignment">
+
+                    <div class="assignment-main">
+                        <span class="assignment-type">Statistics</span>
+
+                        <h4>Probability Problems</h4>
+
+                        <p>
+                            Unit 02 • 20 Marks • Due 20 Sep 2026
+                        </p>
+                    </div>
+
+                    <b class="status-late">
+                        Late
+                    </b>
+
+                    <a href="submit.html">
+                        View
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Assignment Guidelines</h3>
+            </div>
+
+            <div class="guideline-list">
+
+                <p>✓ Check the deadline before submission.</p>
+
+                <p>✓ Upload the required file format.</p>
+
+                <p>✓ You can resubmit if faculty allows it.</p>
+
+                <p>✓ Submitted files remain available in My Submissions.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,368 @@
+{% extends "base.html" %}
+
+{% block title %}Resources | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Student Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📚</span>
+                My Subjects
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="assignments.html">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="favorites.html">
+                <span class="nav-icon">⭐</span>
+                Favorites
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📤</span>
+                My Submissions
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main -->
+    <main class="dashboard-main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Academic Resources</h1>
+                <p>Find and manage your learning resources</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+                    <div class="profile-avatar">LM</div>
+
+                    <div class="profile-info">
+                        <strong>Lalit Mali</strong>
+                        <span>AI & Data Science • Sem 3</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Breadcrumb -->
+        <div class="resource-breadcrumb">
+            Home <span>›</span>
+            AI & Data Science <span>›</span>
+            Semester 3 <span>›</span>
+            DBMS
+        </div>
+
+
+        <!-- Subject Header -->
+        <section class="resource-header-card">
+
+            <div>
+                <span class="resource-label">CURRENT SUBJECT</span>
+
+                <h2>
+                    Database Management System
+                </h2>
+
+                <p>
+                    Semester 3 • AI & Data Science
+                </p>
+            </div>
+
+            <div class="resource-total">
+                <strong>24</strong>
+                <span>Resources</span>
+            </div>
+
+        </section>
+
+
+        <!-- Filters -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Find Resources</h3>
+            </div>
+
+            <div class="resource-filter">
+
+                <select>
+                    <option>AI & Data Science</option>
+                    <option>Computer Engineering</option>
+                    <option>Electronics</option>
+                </select>
+
+                <select>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                </select>
+
+                <select>
+                    <option>Database Management System</option>
+                    <option>Python Programming</option>
+                    <option>Data Structures</option>
+                </select>
+
+                <input
+                    type="search"
+                    placeholder="Search resources..."
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- Units -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Course Units</h3>
+            </div>
+
+            <div class="unit-grid">
+
+                <div class="unit-card">
+                    <span>UNIT 01</span>
+                    <h4>Introduction to DBMS</h4>
+                    <p>5 Topics • 6 Resources</p>
+                </div>
+
+                <div class="unit-card active-unit">
+                    <span>UNIT 02</span>
+                    <h4>SQL and Queries</h4>
+                    <p>7 Topics • 8 Resources</p>
+                </div>
+
+                <div class="unit-card">
+                    <span>UNIT 03</span>
+                    <h4>Normalization</h4>
+                    <p>4 Topics • 4 Resources</p>
+                </div>
+
+                <div class="unit-card">
+                    <span>UNIT 04</span>
+                    <h4>Transactions</h4>
+                    <p>4 Topics • 3 Resources</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Topics -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Unit 02 • Topics</h3>
+            </div>
+
+            <div class="topic-list">
+
+                <div class="topic-item">
+                    <span>01</span>
+                    Basic SQL Queries
+                    <b>3</b>
+                </div>
+
+                <div class="topic-item active-topic">
+                    <span>02</span>
+                    Nested Queries
+                    <b>4</b>
+                </div>
+
+                <div class="topic-item">
+                    <span>03</span>
+                    Joins
+                    <b>5</b>
+                </div>
+
+                <div class="topic-item">
+                    <span>04</span>
+                    Aggregate Functions
+                    <b>3</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resources -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Nested Queries Resources</h3>
+                <span class="resource-count">4 Files</span>
+            </div>
+
+            <div class="resource-list">
+
+                <div class="resource-item">
+
+                    <div class="resource-icon">📄</div>
+
+                    <div class="resource-info">
+                        <strong>Nested Queries Notes</strong>
+                        <span>Notes • PDF • 2.4 MB</span>
+                    </div>
+
+                    <button>View</button>
+                    <button>☆</button>
+
+                </div>
+
+
+                <div class="resource-item">
+
+                    <div class="resource-icon">📊</div>
+
+                    <div class="resource-info">
+                        <strong>Nested Queries PPT</strong>
+                        <span>PPT • 1.8 MB • Faculty</span>
+                    </div>
+
+                    <button>View</button>
+                    <button>☆</button>
+
+                </div>
+
+
+                <div class="resource-item">
+
+                    <div class="resource-icon">🧪</div>
+
+                    <div class="resource-info">
+                        <strong>SQL Practical</strong>
+                        <span>Practical • PDF • 1.2 MB</span>
+                    </div>
+
+                    <button>View</button>
+                    <button>☆</button>
+
+                </div>
+
+
+                <div class="resource-item">
+
+                    <div class="resource-icon">📋</div>
+
+                    <div class="resource-info">
+                        <strong>DBMS Question Paper</strong>
+                        <span>Question Paper • PDF • 850 KB</span>
+                    </div>
+
+                    <button>View</button>
+                    <button>☆</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Relationship Mapping -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Resource Relationship Mapping</h3>
+            </div>
+
+            <p class="mapping-text">
+                Related resources for the selected topic
+            </p>
+
+            <div class="relationship-grid">
+
+                <div class="relationship-card">
+                    <span>📄</span>
+                    <strong>Notes</strong>
+                    <small>Nested Queries</small>
+                </div>
+
+                <div class="relationship-arrow">↔</div>
+
+                <div class="relationship-card">
+                    <span>📊</span>
+                    <strong>PPT</strong>
+                    <small>Nested Queries</small>
+                </div>
+
+                <div class="relationship-arrow">↔</div>
+
+                <div class="relationship-card">
+                    <span>🧪</span>
+                    <strong>Practical</strong>
+                    <small>SQL Queries</small>
+                </div>
+
+                <div class="relationship-arrow">↔</div>
+
+                <div class="relationship-card">
+                    <span>📋</span>
+                    <strong>Question Paper</strong>
+                    <small>DBMS • Sem 3</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}

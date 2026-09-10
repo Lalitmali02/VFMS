@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block title %}Create Assignment | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Faculty Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="upload.html">
+                <span class="nav-icon">📤</span>
+                Upload Resource
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="submission.html">
+                <span class="nav-icon">📥</span>
+                Submissions
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                My Resources
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Create Assignment</h1>
+                <p>Create and publish an assignment for students</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+                    <div class="profile-avatar">FK</div>
+
+                    <div class="profile-info">
+                        <strong>Faculty Member</strong>
+                        <span>AI & Data Science</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Assignment Information</h3>
+            </div>
+
+            <div class="assignment-form-grid">
+
+                <div class="assignment-field full-field">
+                    <label>Assignment Title</label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: SQL Nested Queries"
+                    >
+                </div>
+
+
+                <div class="assignment-field">
+                    <label>Subject</label>
+
+                    <select>
+                        <option>Database Management System</option>
+                        <option>Python Programming</option>
+                        <option>Data Structures</option>
+                    </select>
+                </div>
+
+
+                <div class="assignment-field">
+                    <label>Unit</label>
+
+                    <select>
+                        <option>Unit 02 - SQL and Queries</option>
+                        <option>Unit 01 - Introduction</option>
+                        <option>Unit 03 - Normalization</option>
+                    </select>
+                </div>
+
+
+                <div class="assignment-field">
+                    <label>Topic</label>
+
+                    <select>
+                        <option>Nested Queries</option>
+                        <option>Joins</option>
+                        <option>Aggregate Functions</option>
+                    </select>
+                </div>
+
+
+                <div class="assignment-field">
+                    <label>Maximum Marks</label>
+
+                    <input
+                        type="number"
+                        placeholder="20"
+                    >
+                </div>
+
+
+                <div class="assignment-field">
+                    <label>Submission Deadline</label>
+
+                    <input type="date">
+                </div>
+
+
+                <div class="assignment-field">
+                    <label>Priority</label>
+
+                    <select>
+                        <option>Normal</option>
+                        <option>Important</option>
+                        <option>High</option>
+                    </select>
+                </div>
+
+
+                <div class="assignment-field full-field">
+
+                    <label>Instructions</label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Write assignment instructions for students..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Assignment Resources</h3>
+            </div>
+
+            <div class="assignment-form-grid">
+
+                <div class="assignment-field">
+
+                    <label>Related Resource</label>
+
+                    <select>
+                        <option>Select Resource</option>
+                        <option>Nested Queries Notes</option>
+                        <option>Nested Queries PPT</option>
+                        <option>SQL Practical</option>
+                    </select>
+
+                </div>
+
+
+                <div class="assignment-field">
+
+                    <label>Visibility</label>
+
+                    <select>
+                        <option>All Students</option>
+                        <option>Semester 3 Only</option>
+                        <option>Selected Students</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <label class="assignment-check">
+
+                <input type="checkbox" checked>
+
+                Allow students to resubmit before deadline
+
+            </label>
+
+        </section>
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Assignment Attachment</h3>
+            </div>
+
+            <div class="assignment-upload">
+
+                <span>📎</span>
+
+                <div>
+                    <strong>Attach supporting file</strong>
+                    <p>PDF, DOC, PPT or other academic files</p>
+                </div>
+
+                <label class="choose-file">
+                    Choose File
+                    <input type="file" hidden>
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <div class="assignment-actions">
+
+            <button type="button" class="secondary-btn">
+                Cancel
+            </button>
+
+            <button type="button" class="draft-btn">
+                Save Draft
+            </button>
+
+            <button type="button" class="primary-btn assignment-btn">
+                Publish Assignment
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+{% endblock %}

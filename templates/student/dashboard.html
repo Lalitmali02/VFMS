@@ -1,0 +1,468 @@
+{% extends "base.html" %}
+
+{% block title %}Student Dashboard | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Student Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="active">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📚</span>
+                My Subjects
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⭐</span>
+                Favorites
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📤</span>
+                My Submissions
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="page-title">
+
+                <h1>Student Dashboard</h1>
+
+                <p>
+                    Access your academic resources and assignments
+                </p>
+
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">
+                        LM
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>Lalit Mali</strong>
+
+                        <span>AI & Data Science • Sem 3</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Welcome -->
+        <section class="welcome-card">
+
+            <h2>Welcome Back, Lalit 👋</h2>
+
+            <p>
+                Find your academic resources, track assignments
+                and manage your submissions in one place.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📚</div>
+
+                <div>
+                    <h3>06</h3>
+                    <p>My Subjects</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📁</div>
+
+                <div>
+                    <h3>248</h3>
+                    <p>Available Resources</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📝</div>
+
+                <div>
+                    <h3>08</h3>
+                    <p>Active Assignments</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">⭐</div>
+
+                <div>
+                    <h3>14</h3>
+                    <p>Favorites</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Access -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Quick Access</h3>
+            </div>
+
+            <div class="quick-actions">
+
+                <div class="action-card">
+
+                    <div class="action-icon">📄</div>
+
+                    <h4>Notes</h4>
+
+                    <p>
+                        Access subject notes and study material.
+                    </p>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="action-icon">📊</div>
+
+                    <h4>PPTs</h4>
+
+                    <p>
+                        View faculty presentation files.
+                    </p>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="action-icon">🧪</div>
+
+                    <h4>Practicals</h4>
+
+                    <p>
+                        Find practical files and guides.
+                    </p>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="action-icon">📋</div>
+
+                    <h4>Question Papers</h4>
+
+                    <p>
+                        Practice with previous question papers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Subjects -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <h3>My Subjects</h3>
+
+                <a href="#" class="view-link">
+                    View All
+                </a>
+
+            </div>
+
+            <div class="subject-list">
+
+                <div class="subject-item">
+
+                    <div>
+                        <strong>Database Management System</strong>
+                        <span>24 Resources</span>
+                    </div>
+
+                    <b>24</b>
+
+                </div>
+
+
+                <div class="subject-item">
+
+                    <div>
+                        <strong>Python Programming</strong>
+                        <span>42 Resources</span>
+                    </div>
+
+                    <b>42</b>
+
+                </div>
+
+
+                <div class="subject-item">
+
+                    <div>
+                        <strong>Data Structures</strong>
+                        <span>38 Resources</span>
+                    </div>
+
+                    <b>38</b>
+
+                </div>
+
+
+                <div class="subject-item">
+
+                    <div>
+                        <strong>Statistics</strong>
+                        <span>31 Resources</span>
+                    </div>
+
+                    <b>31</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Progress -->
+        <div class="admin-two-column">
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Assignment Progress</h3>
+                </div>
+
+                <div class="overview-row">
+                    <span>Completed</span>
+                    <strong class="success-text">12</strong>
+                </div>
+
+                <div class="overview-row">
+                    <span>Pending</span>
+                    <strong class="warning-text">04</strong>
+                </div>
+
+                <div class="overview-row">
+                    <span>Late</span>
+                    <strong class="danger-text">01</strong>
+                </div>
+
+            </section>
+
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Overall Progress</h3>
+                </div>
+
+                <div class="student-progress">
+
+                    <div class="progress-header">
+                        <span>Assignments</span>
+                        <strong>71%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <p>
+                        Keep going! Complete your pending assignments.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Upcoming Assignments -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <h3>Upcoming Assignments</h3>
+
+                <a href="#" class="view-link">
+                    View All
+                </a>
+
+            </div>
+
+            <div class="assignment-row">
+
+                <div>
+                    <strong>SQL Nested Queries</strong>
+                    <span>DBMS • Due 12 Sep 2026</span>
+                </div>
+
+                <b class="status-pending">Pending</b>
+
+            </div>
+
+
+            <div class="assignment-row">
+
+                <div>
+                    <strong>Python Functions</strong>
+                    <span>Python • Due 15 Sep 2026</span>
+                </div>
+
+                <b class="status-pending">Pending</b>
+
+            </div>
+
+
+            <div class="assignment-row">
+
+                <div>
+                    <strong>Tree Implementation</strong>
+                    <span>Data Structures • Due 18 Sep 2026</span>
+                </div>
+
+                <b class="status-submitted">Submitted</b>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Activity -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Recent Activity</h3>
+            </div>
+
+            <ul class="activity-list">
+
+                <li class="activity-item">
+
+                    <div class="activity-icon">📥</div>
+
+                    <div class="activity-text">
+
+                        <strong>
+                            DBMS Notes viewed
+                        </strong>
+
+                        <span>
+                            Unit 2 • 20 minutes ago
+                        </span>
+
+                    </div>
+
+                </li>
+
+
+                <li class="activity-item">
+
+                    <div class="activity-icon">⭐</div>
+
+                    <div class="activity-text">
+
+                        <strong>
+                            Resource added to favorites
+                        </strong>
+
+                        <span>
+                            Python Practical • 1 hour ago
+                        </span>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}Login | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="auth-page">
+
+    <!-- Left Branding Section -->
+    <section class="auth-left">
+
+        <div class="brand-logo">VFMS</div>
+
+        <div class="brand-tag">
+            VIRTUAL FILE MANAGEMENT SYSTEM
+        </div>
+
+        <h1>
+            One Platform.<br>
+            All Academic Resources.
+        </h1>
+
+        <p>
+            Manage academic files, assignments, notes and other
+            learning resources through one organized platform.
+        </p>
+
+        <div class="feature-list">
+
+            <div class="feature-item">
+                <span>📚</span>
+                <div>
+                    <b>Centralized Resources</b>
+                    <small>Access academic files in one place.</small>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <span>🔐</span>
+                <div>
+                    <b>Role-Based Access</b>
+                    <small>Separate access for students and faculty.</small>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <span>🔗</span>
+                <div>
+                    <b>Resource Connections</b>
+                    <small>Connect notes, PPTs, practicals and papers.</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Login Section -->
+    <section class="auth-right">
+
+        <div class="form-box">
+
+            <div class="form-heading">
+
+                <div class="form-icon">🔑</div>
+
+                <h2>Welcome Back</h2>
+
+                <p>
+                    Login to continue to your VFMS account
+                </p>
+
+            </div>
+
+
+            <form>
+
+                <!-- Email -->
+                <div class="input-group">
+
+                    <label for="email">
+                        Email / Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email or username"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Login Options -->
+                <div class="login-options">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            name="remember"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Login to VFMS
+                </button>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>ACCOUNT</span>
+            </div>
+
+
+            <!-- Register -->
+            <p class="account-text">
+
+                Don't have an account?
+
+                <a href="register.html">
+                    Create Account
+                </a>
+
+            </p>
+
+
+            <!-- Security -->
+            <div class="security-note">
+
+                🔒 Your academic account is protected
+                with secure role-based access.
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock %}

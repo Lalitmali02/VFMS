@@ -1,0 +1,412 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Resource | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Faculty Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📚</span>
+                My Subjects
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">📤</span>
+                Upload Resource
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                My Resources
+            </a>
+
+            <a href="assignment.html">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="submission.html">
+                <span class="nav-icon">📥</span>
+                Submissions
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Upload Resource</h1>
+                <p>Add a new academic resource to VFMS</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">FK</div>
+
+                    <div class="profile-info">
+                        <strong>Faculty Member</strong>
+                        <span>AI & Data Science</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Intro -->
+        <section class="upload-intro">
+
+            <div>
+                <span>RESOURCE MANAGEMENT</span>
+                <h2>Upload Academic Resource</h2>
+                <p>
+                    Add organized learning material and connect it
+                    with related academic resources.
+                </p>
+            </div>
+
+            <div class="upload-step">
+                <b>Step 1</b>
+                <small>Resource Details</small>
+            </div>
+
+        </section>
+
+
+        <form class="upload-form">
+
+            <!-- Resource Information -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Resource Information</h3>
+                </div>
+
+                <div class="upload-form-grid">
+
+                    <div class="upload-field full-field">
+
+                        <label>Resource Title</label>
+
+                        <input
+                            type="text"
+                            placeholder="Example: Nested Queries Notes"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="upload-field">
+
+                        <label>Resource Type</label>
+
+                        <select>
+
+                            <option>Select Type</option>
+                            <option>Notes</option>
+                            <option>PPT</option>
+                            <option>Practical</option>
+                            <option>Assignment</option>
+                            <option>Question Paper</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="upload-field">
+
+                        <label>Academic Year</label>
+
+                        <select>
+
+                            <option>2026 - 27</option>
+                            <option>2025 - 26</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="upload-field full-field">
+
+                        <label>Description</label>
+
+                        <textarea
+                            rows="4"
+                            placeholder="Briefly describe this resource..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Academic Location -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Academic Location</h3>
+                </div>
+
+                <div class="upload-form-grid">
+
+                    <div class="upload-field">
+                        <label>Department</label>
+
+                        <select>
+                            <option>AI & Data Science</option>
+                            <option>Computer Engineering</option>
+                            <option>Electronics</option>
+                            <option>Mechanical</option>
+                        </select>
+                    </div>
+
+
+                    <div class="upload-field">
+                        <label>Semester</label>
+
+                        <select>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                        </select>
+                    </div>
+
+
+                    <div class="upload-field">
+                        <label>Subject</label>
+
+                        <select>
+                            <option>Database Management System</option>
+                            <option>Python Programming</option>
+                            <option>Data Structures</option>
+                        </select>
+                    </div>
+
+
+                    <div class="upload-field">
+                        <label>Unit</label>
+
+                        <select>
+                            <option>Unit 02 - SQL and Queries</option>
+                            <option>Unit 01 - Introduction</option>
+                            <option>Unit 03 - Normalization</option>
+                        </select>
+                    </div>
+
+
+                    <div class="upload-field full-field">
+                        <label>Topic</label>
+
+                        <select>
+                            <option>Nested Queries</option>
+                            <option>Basic SQL Queries</option>
+                            <option>Joins</option>
+                            <option>Aggregate Functions</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="selected-path">
+
+                    <span>Selected Location</span>
+
+                    <strong>
+                        AI & Data Science
+                        › Semester 3
+                        › DBMS
+                        › Unit 02
+                        › Nested Queries
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- File -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Upload File</h3>
+                </div>
+
+                <div class="file-upload-area">
+
+                    <div class="upload-icon">📤</div>
+
+                    <h4>Select your resource file</h4>
+
+                    <p>
+                        PDF, PPT, DOC, DOCX, XLS, XLSX
+                    </p>
+
+                    <label class="choose-file">
+
+                        Choose File
+
+                        <input type="file" hidden>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- Relationship -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Resource Relationship</h3>
+                </div>
+
+                <p class="upload-help">
+                    Connect this resource with an existing resource.
+                </p>
+
+                <div class="upload-form-grid">
+
+                    <div class="upload-field">
+                        <label>Related Resource</label>
+
+                        <select>
+                            <option>Select Resource</option>
+                            <option>Nested Queries PPT</option>
+                            <option>SQL Practical</option>
+                            <option>DBMS Question Paper</option>
+                        </select>
+                    </div>
+
+                    <div class="upload-field">
+                        <label>Relationship Type</label>
+
+                        <select>
+                            <option>Related Material</option>
+                            <option>Practical For</option>
+                            <option>Reference For</option>
+                            <option>Question Paper For</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Tags & Visibility -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+                    <h3>Tags & Visibility</h3>
+                </div>
+
+                <div class="upload-form-grid">
+
+                    <div class="upload-field">
+                        <label>Tags</label>
+
+                        <input
+                            type="text"
+                            placeholder="SQL, DBMS, Queries"
+                        >
+                    </div>
+
+                    <div class="upload-field">
+                        <label>Visibility</label>
+
+                        <select>
+                            <option>Students & Faculty</option>
+                            <option>Students Only</option>
+                            <option>Faculty Only</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <label class="upload-checkbox">
+
+                    <input type="checkbox" checked>
+
+                    Allow students to download this resource
+
+                </label>
+
+            </section>
+
+
+            <!-- Actions -->
+            <div class="upload-actions">
+
+                <button type="button" class="secondary-btn">
+                    Cancel
+                </button>
+
+                <button type="button" class="draft-btn">
+                    Save as Draft
+                </button>
+
+                <button type="submit" class="primary-btn upload-btn">
+                    Upload Resource
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</div>
+
+{% endblock %}

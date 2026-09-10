@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+
+{% block title %}Submit Assignment | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Student Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="resources.html">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="assignments.html" class="active">
+                <span class="nav-icon">📝</span>
+                Assignments
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⭐</span>
+                Favorites
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📤</span>
+                My Submissions
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Submit Assignment</h1>
+                <p>Upload your solution before the deadline</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+                    <div class="profile-avatar">LM</div>
+
+                    <div class="profile-info">
+                        <strong>Lalit Mali</strong>
+                        <span>Student • Semester 3</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Assignment Details -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>SQL Nested Queries</h3>
+
+                <b class="status-pending">
+                    Pending
+                </b>
+            </div>
+
+            <div class="assignment-details">
+
+                <div>
+                    <span>Subject</span>
+                    <strong>Database Management System</strong>
+                </div>
+
+                <div>
+                    <span>Unit</span>
+                    <strong>Unit 02</strong>
+                </div>
+
+                <div>
+                    <span>Marks</span>
+                    <strong>20 Marks</strong>
+                </div>
+
+                <div>
+                    <span>Deadline</span>
+                    <strong>12 Sep 2026</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Instructions -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Instructions</h3>
+            </div>
+
+            <div class="instruction-box">
+
+                <p>
+                    Write SQL queries using nested query concepts.
+                    Solve all questions and submit the completed
+                    practical file.
+                </p>
+
+                <p>
+                    Make sure your file contains your name,
+                    roll number and subject details.
+                </p>
+
+            </div>
+
+
+            <div class="related-resource">
+
+                <span>📎 Related Resource</span>
+
+                <a href="resources.html">
+                    Nested Queries Notes
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Upload -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Your Submission</h3>
+            </div>
+
+            <div class="student-upload">
+
+                <div class="upload-icon">📤</div>
+
+                <h4>Upload Assignment File</h4>
+
+                <p>
+                    PDF, DOC, DOCX, ZIP • Maximum 10 MB
+                </p>
+
+                <label class="choose-file">
+
+                    Choose File
+
+                    <input type="file" hidden>
+
+                </label>
+
+            </div>
+
+
+            <div class="assignment-field">
+
+                <label>Comment for Faculty</label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Add a comment if required..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+        <!-- Submission History -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Submission History</h3>
+            </div>
+
+            <div class="history-row">
+
+                <div>
+                    <strong>Version 1</strong>
+                    <span>Uploaded 10 Sep 2026</span>
+                </div>
+
+                <b>Pending Review</b>
+
+            </div>
+
+        </section>
+
+
+        <div class="assignment-actions">
+
+            <a href="assignments.html"
+               class="secondary-btn">
+                Cancel
+            </a>
+
+            <button class="primary-btn assignment-btn">
+                Submit Assignment
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+{% endblock %}

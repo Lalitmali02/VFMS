@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+
+{% block title %}Register | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="auth-page">
+
+    <!-- Left Section -->
+    <section class="auth-left">
+
+        <div class="brand-logo">VFMS</div>
+
+        <div class="brand-tag">
+            VIRTUAL FILE MANAGEMENT SYSTEM
+        </div>
+
+        <h1>
+            Create Your<br>
+            Academic Account.
+        </h1>
+
+        <p>
+            Join VFMS and manage academic resources,
+            assignments and submissions from one platform.
+        </p>
+
+        <div class="feature-list">
+
+            <div class="feature-item">
+                <span>👨‍🎓</span>
+                <div>
+                    <b>Student Access</b>
+                    <small>Find resources and submit assignments.</small>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <span>👨‍🏫</span>
+                <div>
+                    <b>Faculty Access</b>
+                    <small>Upload resources and manage assignments.</small>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <span>🗂️</span>
+                <div>
+                    <b>Organized Files</b>
+                    <small>Resources are arranged by academic structure.</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Register Section -->
+    <section class="auth-right">
+
+        <div class="form-box register-box">
+
+            <div class="form-heading">
+
+                <div class="form-icon">👤</div>
+
+                <h2>Create Account</h2>
+
+                <p>
+                    Register your VFMS academic account
+                </p>
+
+            </div>
+
+
+            <form>
+
+                <!-- Name -->
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@college.edu"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Role + Department -->
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="role">
+                            Account Role
+                        </label>
+
+                        <select id="role" name="role">
+
+                            <option value="">
+                                Select Role
+                            </option>
+
+                            <option value="student">
+                                Student
+                            </option>
+
+                            <option value="faculty">
+                                Faculty
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select id="department" name="department">
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option>
+                                AI & Data Science
+                            </option>
+
+                            <option>
+                                Computer Engineering
+                            </option>
+
+                            <option>
+                                Electronics
+                            </option>
+
+                            <option>
+                                Mechanical
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Semester -->
+                <div class="input-group">
+
+                    <label for="semester">
+                        Semester
+                    </label>
+
+                    <select id="semester" name="semester">
+
+                        <option value="">
+                            Select Semester
+                        </option>
+
+                        <option>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            placeholder="Confirm password"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms -->
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    I agree to the VFMS terms and conditions.
+
+                </label>
+
+
+                <!-- Button -->
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Create VFMS Account
+                </button>
+
+            </form>
+
+
+            <div class="divider">
+                <span>ACCOUNT</span>
+            </div>
+
+
+            <p class="account-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </p>
+
+
+            <div class="security-note">
+
+                🔒 Account access will depend on your assigned role.
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock %}

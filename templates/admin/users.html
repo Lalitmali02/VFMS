@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}User Management | VFMS{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>VFMS</h2>
+            <p>Administrator Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">👥</span>
+                Users
+            </a>
+
+            <a href="department.html">
+                <span class="nav-icon">🏢</span>
+                Departments
+            </a>
+
+            <a href="subjects.html">
+                <span class="nav-icon">📚</span>
+                Subjects
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">📁</span>
+                Resources
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♻</span>
+                Recycle Bin
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="../login.html">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>User Management</h1>
+                <p>Manage students, faculty and administrator accounts</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">🔔</button>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">AD</div>
+
+                    <div class="profile-info">
+                        <strong>Administrator</strong>
+                        <span>System Admin</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div>
+                    <h3>120</h3>
+                    <p>Total Users</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <div>
+                    <h3>96</h3>
+                    <p>Students</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">👨‍🏫</div>
+                <div>
+                    <h3>22</h3>
+                    <p>Faculty</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🔐</div>
+                <div>
+                    <h3>02</h3>
+                    <p>Admins</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- User List -->
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <h3>Registered Users</h3>
+
+                <button class="admin-add-btn">
+                    + Add User
+                </button>
+
+            </div>
+
+
+            <div class="admin-filter">
+
+                <input
+                    type="search"
+                    placeholder="Search name or email..."
+                >
+
+                <select>
+                    <option>All Roles</option>
+                    <option>Student</option>
+                    <option>Faculty</option>
+                    <option>Admin</option>
+                </select>
+
+                <select>
+                    <option>All Departments</option>
+                    <option>AI & Data Science</option>
+                    <option>Computer Engineering</option>
+                    <option>Electronics</option>
+                </select>
+
+            </div>
+
+
+            <div class="admin-table">
+
+                <div class="admin-table-row admin-table-head">
+
+                    <span>User</span>
+                    <span>Role</span>
+                    <span>Department</span>
+                    <span>Status</span>
+                    <span>Action</span>
+
+                </div>
+
+
+                <div class="admin-table-row">
+
+                    <span>
+                        Lalit Mali
+                        <small>lalit@example.com</small>
+                    </span>
+
+                    <span>Student</span>
+
+                    <span>AI & Data Science</span>
+
+                    <b class="active-status">Active</b>
+
+                    <button>Manage</button>
+
+                </div>
+
+
+                <div class="admin-table-row">
+
+                    <span>
+                        Rahul Patil
+                        <small>rahul@example.com</small>
+                    </span>
+
+                    <span>Student</span>
+
+                    <span>AI & Data Science</span>
+
+                    <b class="active-status">Active</b>
+
+                    <button>Manage</button>
+
+                </div>
+
+
+                <div class="admin-table-row">
+
+                    <span>
+                        Faculty Member
+                        <small>faculty@example.com</small>
+                    </span>
+
+                    <span>Faculty</span>
+
+                    <span>AI & Data Science</span>
+
+                    <b class="active-status">Active</b>
+
+                    <button>Manage</button>
+
+                </div>
+
+
+                <div class="admin-table-row">
+
+                    <span>
+                        Amit Sharma
+                        <small>amit@example.com</small>
+                    </span>
+
+                    <span>Student</span>
+
+                    <span>Computer Engineering</span>
+
+                    <b class="inactive-status">Inactive</b>
+
+                    <button>Manage</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Account Actions -->
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+                <h3>Administrative Actions</h3>
+            </div>
+
+            <div class="admin-actions">
+
+                <div>
+                    <strong>Reset Password</strong>
+                    <p>Reset a user's account password.</p>
+                </div>
+
+                <button>Reset</button>
+
+                <div>
+                    <strong>Deactivate Account</strong>
+                    <p>Temporarily disable user access.</p>
+                </div>
+
+                <button class="danger-btn">Deactivate</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}
